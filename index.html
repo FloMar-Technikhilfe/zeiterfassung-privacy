@@ -5,68 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Datenschutzerklärung – Zeiterfassung</title>
   <style>
+    :root {
+      color-scheme: light dark;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.65;
+      line-height: 1.7;
       max-width: 860px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 20px 60px;
       color: #222;
+      background: #fff;
     }
-    h1, h2 { color: #111; }
-    h1 { margin-bottom: 0.4em; }
-    h2 { margin-top: 1.8em; }
-    p { margin: 0.7em 0; }
+
+    h1, h2 {
+      color: #111;
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin-bottom: 0.4em;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 1.8em;
+      margin-bottom: 0.5em;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 0.7em 0;
+    }
+
+    .meta {
+      color: #555;
+      margin-bottom: 2em;
+    }
+
+    a {
+      color: #0a66c2;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111;
+        color: #e8e8e8;
+      }
+
+      h1, h2 {
+        color: #fff;
+      }
+
+      .meta {
+        color: #bbb;
+      }
+
+      a {
+        color: #7db7ff;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>Datenschutzerklärung für die App „Zeiterfassung“</h1>
-
-  <p>Diese App verarbeitet personenbezogene Daten ausschließlich, soweit dies für die vom Nutzer gewünschten Funktionen erforderlich ist. Eine Übermittlung an eigene Server des App-Anbieters findet nicht statt.</p>
-
-  <h2>1. Verantwortlicher</h2>
-  <p>
-    F. Gräwe<br>
-    E-Mail: flomartechnikhilfe@icloud.com
+  <p class="meta">
+    Verantwortlicher: F. Gräwe<br>
+    E-Mail: <a href="mailto:flomartechnikhilfe@icloud.com">flomartechnikhilfe@icloud.com</a><br>
+    Stand: Mai 2026
   </p>
 
-  <h2>2. Lokal verarbeitete Daten</h2>
+  <p>Diese App verarbeitet personenbezogene Daten ausschließlich, soweit dies für die vom Nutzer gewünschten Funktionen erforderlich ist. Eine Übermittlung an eigene Server des App-Anbieters findet nicht statt. Daten werden grundsätzlich lokal auf dem Gerät verarbeitet, sofern der Nutzer nicht bewusst Export-, Teilen- oder Systemintegrationen verwendet.</p>
+
+  <h2>1. Lokal verarbeitete Daten</h2>
   <p>Die App speichert Arbeitszeiten, Abwesenheiten, Einstellungen, Standortprofile, Gleitzeit- und Urlaubsdaten lokal auf dem Gerät. Die Speicherung erfolgt im App-Speicher des iPhone und, soweit technisch erforderlich, in gemeinsamen App-Gruppen für Widgets, Live Activities und die Apple Watch.</p>
 
-  <h2>3. Standortdaten</h2>
+  <h2>2. Standortdaten</h2>
   <p>Standortdaten werden nur verarbeitet, wenn der Nutzer die entsprechende Berechtigung erteilt und die Funktion für Arbeitsorte oder automatische Wegezeit nutzt. Die Verarbeitung erfolgt zur Erkennung hinterlegter Arbeitsorte und zur Unterstützung der Zeiterfassung. Standortdaten werden nicht an eigene Server des App-Anbieters übertragen.</p>
 
-  <h2>4. Kalenderzugriff</h2>
+  <h2>3. Kalenderzugriff</h2>
   <p>Wenn der Nutzer die Kalenderfunktion aktiviert, liest und schreibt die App Kalendereinträge über Apple EventKit in die vom Nutzer freigegebenen Kalender. Dies dient ausschließlich der Anzeige externer Termine in der App sowie der Synchronisierung appinterner Abwesenheiten in einen Apple-Kalender.</p>
 
-  <h2>5. Mitteilungen</h2>
+  <h2>4. Mitteilungen</h2>
   <p>Sofern der Nutzer Mitteilungen erlaubt, verarbeitet die App die dafür erforderlichen lokalen Informationen, um Erinnerungen zu Sollzeit, Pausen oder Rückfragen zu Abwesenheiten anzuzeigen. Es erfolgt keine Übermittlung an eigene Server.</p>
 
-  <h2>6. Kontakte</h2>
+  <h2>5. Kontakte</h2>
   <p>Wenn der Nutzer für die telefonische Anmeldung eine Dienstnummer aus den Kontakten auswählt, greift die App auf die vom Nutzer freigegebenen Kontaktdaten zu. Verwendet wird dabei ausschließlich die ausgewählte Telefonnummer sowie optional der zugehörige Kontaktname zur Anzeige in der App. Eine Übermittlung an eigene Server des App-Anbieters erfolgt nicht.</p>
 
-  <h2>7. Kartendienste und Adresssuche</h2>
-  <p>Für die Suche und Auflösung von Adressen sowie für Kartenansichten nutzt die App Apple-MapKit-Dienste. Dabei können Suchanfragen, Adressdaten oder Koordinaten an Apple übermittelt werden, soweit dies für die jeweilige Kartenfunktion technisch erforderlich ist. Ergänzend gelten die Datenschutzbestimmungen von Apple.</p>
+  <h2>6. Kartendienste und Adresssuche</h2>
+  <p>Für die Suche und Auflösung von Adressen sowie für Kartenansichten nutzt die App Apple-MapKit-Dienste. Dabei können Suchanfragen, Adressdaten oder Koordinaten an Apple übermittelt werden, soweit dies für die jeweilige Kartenfunktion technisch erforderlich ist. Es gelten ergänzend die Datenschutzbestimmungen von Apple.</p>
+
+  <h2>7. Export, Import und Teilen</h2>
+  <p>Wenn der Nutzer Daten als JSON, CSV oder PDF exportiert oder teilt, erstellt die App die ausgewählten Dateien nur auf ausdrückliche Nutzeraktion. Diese Dateien können an einen vom Nutzer gewählten Speicherort, Cloud-Dienst, Dateien-Anbieter oder eine andere App übergeben werden. Beim Import greift die App nur vorübergehend auf die vom Nutzer ausgewählte Datei zu und behält keinen dauerhaften Zugriff über die Dateien-App.</p>
 
   <h2>8. Keine Analyse- oder Trackingdienste</h2>
   <p>Die App verwendet keine eigenen Analyse-, Werbe-, Tracking- oder Crash-Reporting-Dienste von Drittanbietern.</p>
 
   <h2>9. Rechtsgrundlagen</h2>
-  <p>Soweit die Verarbeitung zur Bereitstellung der vom Nutzer gewünschten App-Funktionen erforderlich ist, erfolgt sie auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Soweit der Nutzer optionale Berechtigungen wie Standort, Kalender, Kontakte oder Mitteilungen erteilt, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.</p>
+  <p>Soweit die Verarbeitung zur Bereitstellung der vom Nutzer gewünschten App-Funktionen erforderlich ist, erfolgt sie auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Soweit der Nutzer optionale Berechtigungen wie Standort, Kalender, Kontakte oder Mitteilungen erteilt oder Export-, Import- oder Teilen-Funktionen bewusst nutzt, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO beziehungsweise auf Grundlage der vom Nutzer veranlassten Funktionsausführung.</p>
 
   <h2>10. Empfänger</h2>
-  <p>Empfänger der Daten können technisch nur Apple-Dienste sein, soweit der Nutzer Funktionen wie Kalender, Kontakte, Karten, Adresssuche, Mitteilungen, Live Activities oder Apple-Watch-Anbindung verwendet. Eine Weitergabe an sonstige Dritte oder an eigene Server erfolgt nicht.</p>
+  <p>Empfänger der Daten können technisch Apple-Dienste sein, soweit der Nutzer Funktionen wie Kalender, Kontakte, Karten, Adresssuche, Mitteilungen, Live Activities oder Apple-Watch-Anbindung verwendet. Nutzt der Nutzer Export- oder Teilen-Funktionen, können darüber hinaus die vom Nutzer ausdrücklich ausgewählten Speicherorte, Dateien-Anbieter, Cloud-Dienste oder Apps Empfänger der exportierten Daten werden. Eine Weitergabe an eigene Server des App-Anbieters erfolgt nicht.</p>
 
   <h2>11. Speicherdauer</h2>
-  <p>Die lokal gespeicherten Daten verbleiben grundsätzlich auf dem Gerät, bis sie vom Nutzer in der App geändert oder gelöscht werden oder bis die App entfernt wird. Kalenderdaten, die in Apple Kalender geschrieben wurden, verbleiben dort, bis sie vom Nutzer oder durch erneute Synchronisierung entfernt werden. Die aus Kontakten übernommene Dienstnummer verbleibt lokal in der App, bis sie geändert oder entfernt wird.</p>
+  <p>Die lokal gespeicherten Daten verbleiben grundsätzlich auf dem Gerät, bis sie vom Nutzer in der App geändert oder gelöscht werden oder bis die App entfernt wird. Kalenderdaten, die in Apple Kalender geschrieben wurden, verbleiben dort, bis sie vom Nutzer oder durch erneute Synchronisierung entfernt werden. Die aus Kontakten übernommene Dienstnummer verbleibt lokal in der App, bis sie geändert oder entfernt wird. Exportierte oder geteilte Dateien verbleiben an dem vom Nutzer gewählten Speicherort oder in der vom Nutzer gewählten App, bis sie dort gelöscht werden.</p>
 
   <h2>12. Rechte betroffener Personen</h2>
   <p>Betroffene Personen haben nach Maßgabe der DSGVO insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Beschwerde bei einer Datenschutzaufsichtsbehörde. Sofern eine Verarbeitung auf Einwilligung beruht, kann diese jederzeit mit Wirkung für die Zukunft widerrufen werden, insbesondere durch Entzug der jeweiligen Berechtigung in iOS oder durch Deaktivierung der Funktion in der App.</p>
 
-  <h2>13. Änderungen</h2>
+  <h2>13. Änderungen dieser Datenschutzerklärung</h2>
   <p>Diese Datenschutzerklärung kann angepasst werden, wenn sich Funktionen der App oder rechtliche Anforderungen ändern.</p>
-
-  <h2>14. Stand</h2>
-  <p>Stand: Mai 2026</p>
 </body>
 </html>
